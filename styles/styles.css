@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #fcefe0;
+}
+h1, h2{
+    font-family: 'Fraunces', serif;
+}
+p{
+    color: #979797;
+}
+.card-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card-border{
+    max-width: 40rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 1px 1px 10px #f3f3f3;
+}
+/* Perfum image */
+.card-border .img{
+    padding-left: 0;
+}
+.img-desktop{
+    border-radius: 0.75rem 0 0 0.75rem;
+    height: 100%;
+}
+.img-mobile{
+    display: none;
+}
+/* Content */
+.card-content{
+    padding: 2rem 1.9rem 2rem 1.2rem;
+}
+.perfume-text{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.card-content h1{
+    font-size: 2.2rem;
+}
+.description{
+    margin: 1.5rem 0;
+}
+/* prices */
+.pricing{
+    display: flex;
+    min-height: 20px;
+}
+.pricing h2{
+    margin: auto 0;
+    color: hsl(158, 36%, 37%);
+    margin-right: 1rem;
+}
+.pricing p{
+    margin: auto 0;
+    text-decoration: line-through;
+}
+/* btn */
+.card-content a {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.75rem;
+    color: #f5f5f5;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    transition: .2s;
+}
+.card-content a:hover{
+    background-color: hsl(158, 56%, 24%);
+}
+
+/************* Media Query  ***************/
+@media (max-width:767px) {
+    .card-border .img {
+        padding: 0;
+    }
+    .img-desktop {
+        display: none; 
+    }
+    .img-mobile {
+        display: inline;
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+    .card-border{
+        max-width: 23.4375rem;
+    }
+}
